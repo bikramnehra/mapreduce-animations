@@ -1,0 +1,72 @@
+.page-wordcount.ng-enter {
+  -webkit-animation: moveFromTop 1s ease both;
+  animation: moveFromTop 1s ease both; }
+
+#pageTitle,
+#insertInputText {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  color: white; }
+
+#pageTitle {
+  width: 100%;
+  height: 100px;
+  font: 8em/1 Arial; }
+  #pageTitle .text--line {
+    font-size: .5em; }
+  #pageTitle .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 2% 8%;
+    stroke-width: 3px;
+    animation: stroke-offset 5s infinite linear; }
+    #pageTitle .text-copy:nth-child(1) {
+      stroke: #360745;
+      stroke-dashoffset: 2%; }
+    #pageTitle .text-copy:nth-child(2) {
+      stroke: #D61C59;
+      stroke-dashoffset: 4%; }
+    #pageTitle .text-copy:nth-child(3) {
+      stroke: #E7D84B;
+      stroke-dashoffset: 6%; }
+    #pageTitle .text-copy:nth-child(4) {
+      stroke: #EFEAC5;
+      stroke-dashoffset: 8%; }
+    #pageTitle .text-copy:nth-child(5) {
+      stroke: #1B8798;
+      stroke-dashoffset: 10%; }
+@keyframes stroke-offset {
+  80% {
+    stroke-dashoffset: 10%;
+    stroke-dasharray: 0 25%; } }
+#textInput {
+  display: block;
+  margin: 20px auto 10px;
+  resize: none;
+  -webkit-box-shadow: 2px 2px 5px steelblue;
+  -moz-box-shadow: 2px 2px 5px steelblue;
+  box-shadow: 2px 2px 5px steelblue;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  outline: none; }
+
+.animationControls {
+  padding: 2px;
+  text-align: center;
+  background-color: #FFB266;
+  color: black; }
+  .animationControls h4 {
+    margin: 20px auto 0; }
+  .animationControls p,
+  .animationControls md-slider {
+    display: inline-block; }
+  .animationControls md-slider {
+    width: 400px;
+    margin: 0 auto;
+    vertical-align: middle; }
+    .animationControls md-slider .md-track-ticks canvas {
+      display: none; }
+
+/*# sourceMappingURL=WordCount.css.map */

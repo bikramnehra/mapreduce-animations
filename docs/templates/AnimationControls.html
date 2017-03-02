@@ -1,0 +1,42 @@
+<div class="animationControls">
+    <md-button id="previousBtn"
+               class="md-fab md-primary md-mini"
+               ng-click="previous()"
+               ng-disabled="isAnimationDisabled() || isStopped()">
+        <
+    </md-button>
+
+    <md-button id="playBtn"
+               class="md-fab md-primary"
+               ng-click="animate()"
+               ng-disabled="isAnimationDisabled() || isEnded()">
+        {{playStatus}}
+    </md-button>
+
+    <md-button id="stopBtn"
+               class="md-fab md-primary"
+               ng-click="stop()"
+               ng-disabled="isAnimationDisabled() || isStopped()">
+        Stop
+    </md-button>
+
+    <md-button id="nextBtn"
+               class="md-fab md-primary md-mini"
+               ng-click="next()"
+               ng-disabled="isAnimationDisabled() || isEnded()">
+        >
+    </md-button>
+
+    <md-slider-container>
+        <p>Speed: {{animationSpeed}}</p>
+        <md-slider
+                flex
+                id="animationSlider"
+                class="md-primary"
+                md-discrete
+                step="1" min="1" max="10"
+                ng-model="animationSpeed" aria-label="speed"
+                ng-disabled="isAnimationDisabled()">
+        </md-slider>
+    </md-slider-container>
+</div>

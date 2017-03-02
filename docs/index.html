@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MapReduce Animations</title>
+
+        <!--Loading bootstrap and fontawesome via CDN-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+        <!--Styles-->
+        <link rel="stylesheet" href="../lib/JSAV.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+        <link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="styles/Home/Home.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="styles/About/About.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="styles/WordCount/WordCount.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="styles/Mean/Mean.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="styles/RelativeFrequencies/RelativeFrequencies.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="styles/Menu/Menu.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="styles/MapReduce/MapReduce.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="styles/Exercises/Exercises.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="styles/Exercises/WordCountExercise.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="styles/Exercises/MeanExercise.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="styles/Exercises/RelativeFrequenciesExercise.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+        <link rel="stylesheet" href="../node_modules/angular-material/angular-material.css">
+    </head>
+
+    <body ng-app="App">
+        <!--Angular Libraries-->
+        <script src="../node_modules/angular/angular.min.js"></script>
+        <script src="../node_modules/angular-route/angular-route.min.js"></script>
+        <script src="../node_modules/angular-animate/angular-animate.min.js"></script>
+        <script src="../node_modules/angular-aria/angular-aria.js"></script>
+        <script src="../node_modules/angular-material/angular-material.js"></script>
+
+        <header>
+            <nav class="navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#/">MapReduce Animations</a>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="#about"><i class="fa"></i> About</a></li>
+                        <li><a href="#wordcount"><i class="fa"></i>Word Count</a></li>
+                        <li><a href="#mean"><i class="fa"></i>Mean</a></li>
+                        <li><a href="#relativefrequencies"><i class="fa"></i>Relative Frequencies</a></li>
+                        <li><a href="#exercises"><i class="fa"></i>Exercises</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div id="main">
+            <div class="page {{pageClass}}" ng-view></div>
+        </div>
+
+        <!--SCRIPTS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="../lib/jquery.transit.js"></script>
+        <script src="../lib/raphael.js"></script>
+
+        <!--Angular-->
+        <script src="scripts/services/AnimationService.js"></script>
+
+        <script src="scripts/controllers/HomeController.js"></script>
+        <script src="scripts/controllers/AboutController.js"></script>
+        <script src="scripts/controllers/MenuController.js"></script>
+        <script src="scripts/controllers/WordCountController.js"></script>
+        <script src="scripts/controllers/MeanController.js"></script>
+        <script src="scripts/controllers/RelativeFrequenciesController.js"></script>
+        <script src="scripts/controllers/AnimationController.js"></script>
+        <script src="scripts/controllers/MapReduceController.js"></script>
+        <script src="scripts/controllers/ExercisesController.js"></script>
+        <script src="scripts/controllers/WordCountExerciseController.js"></script>
+        <script src="scripts/controllers/MapReduceExerciseController.js"></script>
+        <script src="scripts/controllers/MeanExerciseController.js"></script>
+        <script src="scripts/controllers/RelativeFrequenciesExerciseController.js"></script>
+
+        <script src="scripts/directives/MenuDirective.js"></script>
+        <script src="scripts/directives/MapReduceDirective.js"></script>
+        <script src="scripts/directives/AnimationControlsDirective.js"></script>
+        <script src="scripts/directives/MeanLabelDirective.js"></script>
+        <script src="scripts/directives/MapReduceExerciseDirective.js"></script>
+
+        <script src="scripts/App.config.js"></script>
+        <script src="scripts/App.js"></script>
+
+        <!--Others-->
+        <!--<script src="../../JSAV-dev-prototypes/build/JSAV.js"></script>-->
+        <script src="../lib/JSAV.js"></script>
+
+        <script src="scripts/Utils.js"></script>
+        <script src="scripts/WordCount.js"></script>
+        <script src="scripts/Mean.js"></script>
+        <script src="scripts/RelativeFrequencies.js"></script>
+        <script src="scripts/WordCountExercise.js"></script>
+        <script src="scripts/MeanExercise.js"></script>
+        <script src="scripts/RelativeFrequenciesExercise.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="../lib/jquery.scrollintoview.min.js"></script>
+    </body>
+</html>

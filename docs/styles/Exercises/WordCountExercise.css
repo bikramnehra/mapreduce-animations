@@ -1,0 +1,13 @@
+.page-exercises-wordcount {
+  text-align: center;
+  height: 1000px;
+  background-color: #0d1e37 !important; }
+  .page-exercises-wordcount.ng-enter {
+    -webkit-animation: moveFromBottom 1s ease both;
+    animation: moveFromBottom 1s ease both; }
+  .page-exercises-wordcount #mapReduceExercise {
+    background-color: #2290a6; }
+    .page-exercises-wordcount #mapReduceExercise[name="WordCount"][type="Combiner"] .jsav-pair:hover {
+      background-color: #649bb0; }
+
+/*# sourceMappingURL=WordCountExercise.css.map */

@@ -1,0 +1,30 @@
+#menu {
+  text-align: center;
+  color: white; }
+  #menu #menuOptionsToggleBtn {
+    display: block;
+    margin: 10px auto 0; }
+  #menu .menuText {
+    font-size: 1.2em; }
+  #menu #menuOptions {
+    background-color: grey;
+    border-top: 2px dotted white;
+    border-bottom: 2px solid white;
+    position: relative;
+    top: -30px; }
+    #menu #menuOptions .mapperPerLine {
+      margin-top: 35px; }
+    #menu #menuOptions .menuText {
+      display: inline-block;
+      margin: 10px auto 15px; }
+    #menu #menuOptions #runMapReduceBtn {
+      display: block;
+      margin: 0 auto;
+      color: white;
+      background-color: cornflowerblue;
+      font-size: 1em;
+      margin-bottom: 20px; }
+    #menu #menuOptions md-progress-circular {
+      margin: 0 auto; }
+
+/*# sourceMappingURL=Menu.css.map */

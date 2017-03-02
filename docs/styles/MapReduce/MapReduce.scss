@@ -1,0 +1,152 @@
+#map {
+  padding-top: 20px;
+}
+
+#reduce {
+  margin-bottom: 72px;
+}
+
+.jsavsettings-dialog {
+  color: black;
+}
+
+.mapReduceSection {
+  background-color: black;
+  display: flex;
+  flex-flow: column nowrap;
+
+  .processTitle {
+    border-top: 2px solid white;
+    background-color: #014579;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+
+    .closed {
+      display: none;
+    }
+  }
+
+  .processTitle:hover {
+    background-color: lightslategrey;
+  }
+
+  .animationContainer{
+    display: flex;
+    justify-content: space-around;
+
+    .jsavcontainer {
+      width: 555px;
+      border: 2px ridge cornflowerblue;
+      background: none;
+      padding: 10px;
+      margin: 10px;
+
+      h4 {
+        text-align: center;
+      }
+
+      span {
+        &.jsavbegin,
+        &.jsavbackward,
+        &.jsavforward,
+        &.jsavend {
+          background-color: steelblue;
+          color: white;
+          border: 2px solid white;
+
+          &:hover {
+            background-color: rgba(18, 181, 230, 0.7);
+          }
+        }
+      }
+
+      .jsavcounter {
+        position: absolute;
+        top: 15px;
+      }
+
+      .jsavoutput.jsavline {
+        text-align: center;
+        height: auto;
+        margin: 0 auto;
+
+        div {
+          color: white !important;
+        }
+      }
+
+      .jsavcanvas {
+        min-width: auto !important;
+        min-height: auto !important;
+        height: auto;
+
+        div.jsavautoresize.jsavcenter.jsavarray {
+          height: 70px !important;
+          overflow: auto;
+        }
+
+        ol.jsavautoresize.jsavcenter.jsavarray.jsavhorizontalarray {
+          height: 70px !important;
+          max-width: 100%;
+          overflow-x: visible;
+          overflow-y: auto;
+        }
+
+        .jsavlabel {
+          font-size: 1.1em;
+        }
+
+        .jsavnode.jsavindex {
+          background-color: darkgray;
+          border: 2px solid white;
+        }
+
+        .jsavnode.jsavindex.jsavhighlight {
+          background-color: orange !important;
+        }
+
+        .jsavvaluelabel {
+          padding: 5px;
+        }
+
+        .jsav-pair {
+          border: 2px solid white;
+          color: black;
+
+          .jsav-pair-key {
+            background-color: orange;
+          }
+
+          .jsav-pair-values {
+            background-color: cornflowerblue;
+            border-left: 2px solid white;
+          }
+
+          //.jsav-pair-key:hover,
+          //.jsav-pair-values:hover {
+          //  background-color: rgba(255, 255, 255, 0.7);
+          //}
+        }
+
+        .jsavcodeline,
+        .jsavpreviousline {
+          background-color: gray;
+        }
+
+        .jsavcurrentline {
+          background-color: lightcoral;
+        }
+
+        .idContainer.MapperId,
+        .idContainer.ReducerId {
+          min-width: 72px;
+          border: 2px solid white;
+          background-color: silver;
+        }
+      }
+    }
+  }
+}
