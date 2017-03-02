@@ -1,0 +1,50 @@
+<div>
+    <svg id="pageTitle">
+        <symbol id="s-text">
+            <text text-anchor="middle"
+                  x="50%"
+                  y="65px"
+                  class="text--line">
+                Word Count
+            </text>
+        </symbol>
+
+        <g class="g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+    </svg>
+
+    <div id="menu">
+        <div id="menuInput">
+            <h4 id="insertInputText" class="menuText">Insert Input:</h4>
+
+                <textarea id="textInput"
+                          rows="5" cols="50"
+                          ng-model="userInput">
+                </textarea>
+
+            <p>Note: Inputting a lot of words will result in a very large and long animation.</p>
+        </div>
+
+        <md-button id="addSampleDataBtn"
+                   class="md-raised md-primary"
+                   ng-click="addSampleData()">
+            Use Sample Data
+        </md-button>
+
+        <animation-menu name="WordCount"
+                        input="userInput"
+                        show-mapper-per-line="true">
+        </animation-menu>
+    </div>
+
+    <map-reduce></map-reduce>
+
+    <footer class="navbar-fixed-bottom">
+        <animation-controls></animation-controls>
+    </footer>
+</div>

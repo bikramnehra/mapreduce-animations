@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,kCAAW;EACT,iBAAiB,EAAE,wBAAwB;EAC3C,SAAS,EAAE,wBAAwB",
+"sources": ["RelativeFrequencies.scss"],
+"names": [],
+"file": "RelativeFrequencies.css"
+}

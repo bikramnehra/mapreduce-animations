@@ -1,0 +1,43 @@
+{
+  "name": "mapreducesite",
+  "version": "1.0.0",
+  "description": "A website that contains multiple animations for the MapReduce algorithm.",
+  "main": "src/scripts/App.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "1.0.6",
+    "angular-messages": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-html2js-preprocessor": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-ng-html2js-preprocessor": "^1.0.0"
+  },
+  "devDependencies": {
+    "karma": "^0.13.22",
+    "karma-coverage": "^1.0.0",
+    "karma-jasmine-jquery": "^0.1.1",
+    "karma-mocha-reporter": "^2.0.3"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "keywords": [
+    "mapreduce",
+    "animation",
+    "wordcount",
+    "mean",
+    "relativefrequencies",
+    "algorithmanimation"
+  ],
+  "author": "Matthew Micallef",
+  "license": "ISC"
+}
