@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,oBAAqB;EACnB,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,kBAAkB;EAEpC,6BAAW;IACT,iBAAiB,EAAE,wBAAwB;IAC3C,SAAS,EAAE,wBAAwB;EAGrC,uCAAmB;IACjB,gBAAgB,EAAE,OAAO;IAMrB,2KAAgB;MACd,gBAAgB,EAAE,OAAO",
-"sources": ["MeanExercise.scss"],
-"names": [],
-"file": "MeanExercise.css"
-}
