@@ -1,0 +1,41 @@
+.page-mean {
+  &.ng-enter {
+    -webkit-animation: moveFromBottom 1s ease both;
+    animation: moveFromBottom 1s ease both;
+  }
+}
+
+#menuInput {
+  color: black;
+  font-size: 1.2em;
+
+  .input-group,
+  .well {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  p {
+    color: white;
+    margin: 10px auto 5px;
+  }
+
+  .well {
+    margin: 0 auto;
+
+    .label-default {
+      display: inline-block;
+      margin: 2px;
+      font-size: 0.9em;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}
+
+#addToListBtn,
+#addSampleDataBtn,
+#removeFromListBtn {
+  background-color: cornflowerblue;
+  margin-top: 15px;
+}

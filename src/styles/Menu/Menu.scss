@@ -1,0 +1,43 @@
+#menu {
+  text-align: center;
+  color: white;
+
+  #menuOptionsToggleBtn {
+    display: block;
+    margin: 10px auto 0;
+  }
+
+  .menuText {
+    font-size: 1.2em;
+  }
+
+  #menuOptions {
+    background-color: grey;
+    border-top: 2px dotted white;
+    border-bottom: 2px solid white;
+    position: relative;
+    top: -30px;
+
+    .mapperPerLine {
+      margin-top: 35px;
+    }
+
+    .menuText {
+      display: inline-block;
+      margin: 10px auto 15px;
+    }
+
+    #runMapReduceBtn {
+      display: block;
+      margin: 0 auto;
+      color: white;
+      background-color: cornflowerblue;
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    md-progress-circular {
+      margin: 0 auto;
+    }
+  }
+}

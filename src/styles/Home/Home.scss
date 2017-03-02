@@ -1,0 +1,30 @@
+.page-home {
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  &.ng-enter {
+    -webkit-animation: moveFromRight 1s ease both;
+    animation: moveFromRight 1s ease both;
+  }
+
+  h1 {
+    padding: 30px 0;
+  }
+
+  p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.home {
+  height: 100%;
+  background-color: #FFB266;
+  color:#6F1F00;
+  background: url('https://getflywheel.com/wp-content/uploads/2015/08/free-blurred-backgrounds.jpg') no-repeat center center fixed;
+  background-size: cover;
+}

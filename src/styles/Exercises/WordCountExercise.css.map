@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yBAA0B;EACxB,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,MAAM;EACd,gBAAgB,EAAE,kBAAkB;EAEpC,kCAAW;IACT,iBAAiB,EAAE,2BAA2B;IAC9C,SAAS,EAAE,2BAA2B;EAGxC,4CAAmB;IACjB,gBAAgB,EAAE,OAAO;IAKrB,gGAAgB;MACd,gBAAgB,EAAE,OAAO",
+"sources": ["WordCountExercise.scss"],
+"names": [],
+"file": "WordCountExercise.css"
+}

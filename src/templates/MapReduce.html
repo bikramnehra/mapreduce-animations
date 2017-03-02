@@ -1,0 +1,51 @@
+<div id="mapReduceAnimation">
+    <div id="map" class="mapReduceSection">
+        <h3 class="processTitle"
+            ng-click="toggleMapReduceSection('mapperContainer')">
+            Map
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-menu-down closed" aria-hidden="true"></span>
+        </h3>
+        <div id="mapperContainer" class="animationContainer"></div>
+    </div>
+
+    <div id="combine" class="mapReduceSection" ng-show="showCombiners()">
+        <h3 class="processTitle"
+            ng-click="toggleMapReduceSection('combinerContainer')">
+            Combine
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-menu-down closed" aria-hidden="true"></span>
+        </h3>
+        <div id="combinerContainer" class="animationContainer"></div>
+    </div>
+
+    <div id="partition" class="mapReduceSection" ng-show="showPartitioners()">
+        <h3 class="processTitle"
+            ng-click="toggleMapReduceSection('partitionerContainer')">
+            Partition
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-menu-down closed" aria-hidden="true"></span>
+        </h3>
+        <div id="partitionerContainer" class="animationContainer"></div>
+    </div>
+
+    <div id="shuffleAndSort" class="mapReduceSection">
+        <h3 class="processTitle"
+            ng-click="toggleMapReduceSection('sasContainer')">
+            Shuffle and Sort
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-menu-down closed" aria-hidden="true"></span>
+        </h3>
+        <div id="sasContainer" class="animationContainer"></div>
+    </div>
+
+    <div id="reduce" class="mapReduceSection">
+        <h3 class="processTitle"
+            ng-click="toggleMapReduceSection('reducerContainer')">
+            Reduce
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-menu-down closed" aria-hidden="true"></span>
+        </h3>
+        <div id="reducerContainer" class="animationContainer"></div>
+    </div>
+</div>
